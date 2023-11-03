@@ -1,0 +1,54 @@
+@use '../../style/layout.scss' as layout;
+
+
+.navigation {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.navItem {
+	display: grid;
+	justify-content: center;
+	font-size: 16px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid black;
+
+	&--viewed {
+		color: #888;
+		border-bottom: 1px solid #E6E6E6;
+	}
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.community__info {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.info__title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.info__text {
+	color: #363636;
+	font-size: 14px;
+	line-height: 150%;
+}
+
+.button__forward {
+	padding: 16px;
+	font-size: 14px;
+	width: 100%;
+
+	color: white;
+	background-color: #F46F17;
+	border-radius: 10px;
+}
